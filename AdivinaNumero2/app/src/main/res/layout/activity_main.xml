@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.profesoresi.adivinanumero2.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="69dp"
+        android:text="Nombre:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etxNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvNombre"
+        android:layout_alignStart="@+id/txvNombre"
+        android:layout_below="@+id/txvNombre"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Introduce nombre"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txvIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvNombre"
+        android:layout_alignStart="@+id/txvNombre"
+        android:layout_below="@+id/etxNombre"
+        android:layout_marginTop="37dp"
+        android:text="Número de intentos:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etxIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxNombre"
+        android:layout_alignStart="@+id/etxNombre"
+        android:layout_below="@+id/txvIntentos"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Introduce número intentos"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnAcceder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etxIntentos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:onClick="acceder"
+        android:text="Acceder" />
+</RelativeLayout>

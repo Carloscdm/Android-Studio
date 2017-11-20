@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.profesoresi.adivinanumero.MainActivity"
+    android:id="@+id/lytFondo"
+    android:background="@color/amarillo"
+    android:padding="@dimen/dimen_padding">
+
+    <TextView
+        android:id="@+id/txvIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intentos restantes: 5"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txvPista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txvIntentos"
+        android:layout_marginTop="145dp"
+        android:text="@string/pista_ini"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etxNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <Button
+        android:id="@+id/btnProbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/boton"
+        android:textSize="24sp"
+        android:onClick="comprobar" />
+</RelativeLayout>

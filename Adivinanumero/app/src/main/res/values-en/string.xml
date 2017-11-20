@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guess the number</string>
+    <string name="intentos">Remaining attempts: %1$d</string>
+    <string name="pista_ini">You must guess the secret number between 1 and 100.</string>
+    <string name="hint">Number between 1 and 100</string>
+    <string name="boton">Try this number</string>
+    <string name="pista_may">The number you are looking for is bigger than the one you entered, keep looking !!</string>
+    <string name="pista_men">The number you are looking for is less than the one you entered, keep looking !!</string>
+    <string name="pista_ok">You guessed the secret number !!</string>
+    <string name="boton_fin">Game over</string>
+    <string name="pista_ko">OOOOHHHHH, no more attempts. The secret number was %1$d</string>
+</resources>
